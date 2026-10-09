@@ -235,3 +235,16 @@ a.tab { display: inline-flex; align-items: center; text-decoration: none; }
 footer .foot-links { display: flex; flex-wrap: wrap; gap: 6px 18px; }
 footer .foot-links a { text-decoration: none; }
 footer .foot-links a:hover { text-decoration: underline; }
+
+/* Base styles optimized for mobile first */
+.logo img {
+  max-width: 80px; /* Smaller container width for tiny mobile views */
+  height: auto;     /* Maintains the original aspect ratio automatically */
+  display: block;
+}
+/* Media query to scale up the logo when screen space allows (Desktop) */
+@media (min-width: 768px) {
+  .logo img {
+    max-width: 120px; /* Restores your preferred larger desktop size */
+  }
+}
