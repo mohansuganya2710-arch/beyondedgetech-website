@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dcecff"/><stop offset="1" stop-color="#eff8ff"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <circle cx="930" cy="140" r="66" fill="#ffd323" opacity=".8"/>
+  <path d="M0 520 L220 350 390 470 610 260 820 470 1020 320 1200 440 V800 H0Z" fill="#9cc8df"/>
+  <path d="M0 620 L230 480 440 590 700 410 930 580 1090 460 1200 520 V800 H0Z" fill="#5b9ebd"/>
+  <path d="M0 700 Q280 610 520 690 T1200 660 V800 H0Z" fill="#123d9b" opacity=".85"/>
+  <text x="600" y="755" font-family="Arial,sans-serif" font-size="32" fill="#fff" text-anchor="middle" letter-spacing="5">ADD YOUR PROJECT PHOTO</text>
+</svg>

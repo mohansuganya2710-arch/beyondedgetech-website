@@ -1,11 +1,15 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Contact Us · Nilam Plots</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Contact Dream Square Properties for property enquiries around Chennai.">
+    <title>Contact Us | Dream Square Properties</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/homepage-refresh.css">
 </head>
+
 <body>
 <header class="topbar">
   <div class="nav">
@@ -31,29 +35,26 @@
       </button>
     </div>
   </div>
-  <nav class="mobile-panel" id="mobile-panel" aria-label="Mobile" hidden>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li>
-        <button class="dd-btn" id="m-dd-trigger" type="button" aria-expanded="false" aria-controls="m-sub">Projects <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <ul class="sub" id="m-sub" hidden><li><a href="ongoing-projects.html">Ongoing Projects</a></li><li><a href="completed-projects.html">Completed Projects</a></li><li><a href="upcoming-projects.html">Upcoming Projects</a></li></ul>
-      </li>
-      <li><a href="site-visit.html">Site Visit Booking</a></li>
-      <li><a href="loan-calculator.html">Plot Loan Calculator</a></li>
-      <li><a href="contact.html" aria-current="page">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-<section class="wrap page-head"><p class="eyebrow">Contact us</p><h1>Talk to a person, not a form.</h1><p>Sample contact details below. Replace them with your office numbers.</p></section>
-<section class="page-body">
-  <div class="wrap">
-    <div class="contact-grid">
-      <div class="contact-item"><span class="eyebrow">Phone</span><span class="val">+91 98765 43210</span><div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn btn-call" href="tel:+919876543210">Call</a><button class="copy" type="button" data-copy="+91 98765 43210">Copy number</button></div></div>
-      <div class="contact-item"><span class="eyebrow">WhatsApp</span><span class="val">+91 98765 43210</span><div><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20know%20about%20your%20plots" target="_blank" rel="noopener">Chat now</a></div></div>
-      <div class="contact-item"><span class="eyebrow">Email</span><span class="val">hello@nilamplots.example</span><button class="copy" type="button" data-copy="hello@nilamplots.example">Copy email</button></div>
-      <div class="contact-item"><span class="eyebrow">Office hours</span><span class="val">Mon – Sat, 9:30 AM – 6:30 PM</span><span class="emi-sub">Site visits on Sundays by appointment.</span></div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Dream Square Properties home"><img src="assets/images/logo.png"
+          alt="Dream Square Properties logo"></a>
+      <div class="mobile-nav-actions" aria-label="Call or WhatsApp us">
+        <a class="mobile-nav-action mobile-call" 
+        href="tel:+919999999999" aria-label="Call Dream Square Properties" title="Call"><span
+            aria-hidden="true"><i class="fa-solid fa-phone"></i></span><small>Call</small></a>
+        <a class="mobile-nav-action mobile-whatsapp" data-whatsapp
+          href="#" aria-label="WhatsApp Dream Square Properties" title="WhatsApp"><span
+            aria-hidden="true"><i class="fa-solid fa-phone"></i></span><small>WhatsApp</small></a></div>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a data-nav href="index.html">Home</a><a data-nav href="projects.html">Our Projects</a><a data-nav
+          href="about.html">About Us</a><a data-nav href="contact.html">Contact</a><a data-nav
+          href="site-visit.html">Book a Visit</a><a data-nav href="emi-calculator.html">EMI Calculator</a>
+          <a data-nav href="emi-calculator.html">Investors</a>
+      </nav>
+      <!-- <a data-nav href="emi-calculator.html">Investors</a> -->
+      <!-- <a class="nav-cta" data-whatsapp href="#">Investor</a> -->
     </div>
     <div class="cta-band" style="margin-top:24px"><div><h2>Prefer to see it first?</h2><p>Book a site visit and we will meet you at the layout.</p></div><div class="cta-actions"><a class="btn btn-primary" href="site-visit.html">Book a site visit</a></div></div>
   </div>
@@ -67,4 +68,5 @@
 </div></footer>
 <script src="app.js" defer></script>
 </body>
+
 </html>
