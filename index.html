@@ -1,189 +1,323 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Nilam Plots</title>
-<link rel="stylesheet" href="styles.css">
-<header class="topbar">
-  <div class="nav">
-    <a class="logo" href="index.html" aria-label="Nilam Plots home">
-      <img src="./assets/DreamSquareLogo.png" style="width:160px ; height: 80px;  ">
-    </a>
-    <ul class="menu">
-      <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li>
-        <button class="dd-btn" id="dd-trigger" type="button" aria-expanded="false" aria-controls="dd-list">Projects <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <ul class="dd" id="dd-list" hidden><li><a href="ongoing-projects.html">Ongoing Projects</a></li><li><a href="completed-projects.html">Completed Projects</a></li><li><a href="upcoming-projects.html">Upcoming Projects</a></li></ul>
-      </li>
-      <li><a href="site-visit.html">Site Visit Booking</a></li>
-      <li><a href="loan-calculator.html">Plot Loan Calculator</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-    <div class="nav-actions">
-      <a class="btn btn-call" href="tel:+919876543210" aria-label="Call us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> Call</a>
-      <a class="btn btn-wa" href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20know%20about%20your%20plots" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg> WhatsApp</a>
-      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Open menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Explore property opportunities around Chennai with Dream Square Properties. Ask about projects, locations and site visits.">
+  <title>Dream Square Properties | Find Your Place</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/homepage-refresh.css">
+   
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-actions" aria-label="Quick contact">
+        <!-- <a class="topbar-contact topbar-whatsapp" data-whatsapphref="#" aria-label="Contact us on WhatsApp"><span aria-hidden="true">◉</span> WhatsApp</a> -->
+        <a class="topbar-contact topbar-email contact-num" data-phone href="mailto:hello@dreamsquareproperties.in"
+          aria-label="Email Dream Square Properties"><span aria-hidden="true">✉</span> Email Us</a>
+        <a class="topbar-contact topbar-email" data-email href="mailto:hello@dreamsquareproperties.in"
+          aria-label="Email Dream Square Properties"><span aria-hidden="true">✉</span> Email Us</a>
+        </div>
     </div>
   </div>
-  <nav class="mobile-panel" id="mobile-panel" aria-label="Mobile" hidden>
-    <ul>
-      <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li>
-        <button class="dd-btn" id="m-dd-trigger" type="button" aria-expanded="false" aria-controls="m-sub">Projects <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <ul class="sub" id="m-sub" hidden><li><a href="ongoing-projects.html">Ongoing Projects</a></li><li><a href="completed-projects.html">Completed Projects</a></li><li><a href="upcoming-projects.html">Upcoming Projects</a></li></ul>
-      </li>
-      <li><a href="site-visit.html">Site Visit Booking</a></li>
-      <li><a href="loan-calculator.html">Plot Loan Calculator</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-<section class="hero" aria-label="Highlights">
-  <div class="wrap">
-    <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Nilam Plots highlights" id="carousel">
-      <div class="slides" id="slides" tabindex="0">
-          <div class="slide s1" role="group" aria-roledescription="slide" aria-label="1 of 4">
-            <div>
-              <p class="eyebrow">DTCP approved plots</p>
-              <h1>Approved plots with clear title and patta</h1>
-              <p class="lead">Residential plots from 900 sq.ft with documents you can verify before you pay a rupee.</p>
-              <div class="slide-cta"><a class="btn btn-primary" href="ongoing-projects.html">View projects</a><a class="btn btn-ghost" href="about.html">About us</a></div>
-            </div>
-            <div class="slide-art"><svg viewBox="0 0 320 220" role="img" aria-label="Green hills with an approved-plot signboard">
-  <circle cx="246" cy="52" r="26" fill="var(--stake)"/>
-  <path d="M0 150 C60 100 110 100 170 140 S270 120 320 100 V220 H0Z" fill="var(--green)" opacity=".35"/>
-  <path d="M0 175 C70 135 150 150 210 170 S290 160 320 150 V220 H0Z" fill="var(--green)" opacity=".65"/>
-  <rect x="90" y="108" width="5" height="76" fill="var(--ink)"/>
-  <rect x="48" y="78" width="92" height="52" rx="6" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/>
-  <path d="M68 104l10 10 22-22" fill="none" stroke="var(--avail)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="112" y="108" font-size="13" font-weight="700" fill="var(--ink)">DTCP</text>
-</svg></div>
-          </div>
-          <div class="slide s2" role="group" aria-roledescription="slide" aria-label="2 of 4">
-            <div>
-              <p class="eyebrow">Ready infrastructure</p>
-              <h2>Roads, water and power already in place</h2>
-              <p class="lead">Laid roads, storm drains, water lines and street lights are completed before handover.</p>
-              <div class="slide-cta"><a class="btn btn-primary" href="about.html">See what is included</a></div>
-            </div>
-            <div class="slide-art"><svg viewBox="0 0 320 220" role="img" aria-label="A paved road with street lights">
-  <rect x="0" y="0" width="320" height="120" fill="var(--stake)" opacity=".18"/>
-  <rect x="0" y="120" width="320" height="100" fill="var(--green)" opacity=".4"/>
-  <path d="M130 120 H190 L290 220 H30Z" fill="var(--ink)" opacity=".82"/>
-  <path d="M160 126 V140 M160 150 V170 M160 182 V212" stroke="var(--surface)" stroke-width="4" stroke-linecap="round"/>
-  <rect x="66" y="58" width="4" height="102" fill="var(--ink)"/>
-  <path d="M68 60 h30" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="98" cy="66" r="7" fill="var(--stake)"/>
-  <rect x="250" y="58" width="4" height="102" fill="var(--ink)"/>
-  <path d="M252 60 h-30" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="222" cy="66" r="7" fill="var(--stake)"/>
-  <path d="M160 24c-10 14-16 22-16 30a16 16 0 0 0 32 0c0-8-6-16-16-30Z" fill="var(--green)"/>
-</svg></div>
-          </div>
-          <div class="slide s3" role="group" aria-roledescription="slide" aria-label="3 of 4">
-            <div>
-              <p class="eyebrow">Plot loan assistance</p>
-              <h2>Easy bank loans for your plot</h2>
-              <p class="lead">We help with the paperwork. Check your monthly EMI in seconds before you decide.</p>
-              <div class="slide-cta"><a class="btn btn-primary" href="loan-calculator.html">Calculate EMI</a></div>
-            </div>
-            <div class="slide-art"><svg viewBox="0 0 320 220" role="img" aria-label="A house with coins">
-  <rect x="0" y="176" width="320" height="44" fill="var(--green)" opacity=".4"/>
-  <path d="M64 96 160 28l96 68" fill="var(--surface)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>
-  <rect x="84" y="96" width="152" height="82" fill="var(--surface)" stroke="var(--ink)" stroke-width="4"/>
-  <rect x="146" y="124" width="28" height="54" fill="var(--green)"/>
-  <rect x="98" y="114" width="30" height="26" rx="3" fill="var(--stake)" opacity=".8"/>
-  <rect x="192" y="114" width="30" height="26" rx="3" fill="var(--stake)" opacity=".8"/>
-  <circle cx="262" cy="150" r="26" fill="var(--stake)" stroke="var(--ink)" stroke-width="3"/>
-  <text x="262" y="159" text-anchor="middle" font-size="26" font-weight="700" fill="var(--stake-ink)">₹</text>
-</svg></div>
-          </div>
-          <div class="slide s4" role="group" aria-roledescription="slide" aria-label="4 of 4">
-            <div>
-              <p class="eyebrow">Site visit</p>
-              <h2>Visit the site this week</h2>
-              <p class="lead">Pick a day and a time slot. Our team shows you the boundary stones, road width and plot facing on site.</p>
-              <div class="slide-cta"><a class="btn btn-stake" href="site-visit.html">Book a site visit</a><a class="btn btn-ghost" href="contact.html">Contact us</a></div>
-            </div>
-            <div class="slide-art"><svg viewBox="0 0 320 220" role="img" aria-label="A calendar with a location pin">
-  <rect x="0" y="176" width="320" height="44" fill="var(--green)" opacity=".4"/>
-  <rect x="70" y="60" width="180" height="130" rx="12" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
-  <path d="M70 72a12 12 0 0 1 12-12h156a12 12 0 0 1 12 12v22H70Z" fill="var(--green)"/>
-  <rect x="104" y="48" width="6" height="22" rx="3" fill="var(--ink)"/>
-  <rect x="210" y="48" width="6" height="22" rx="3" fill="var(--ink)"/>
-  <g fill="var(--muted)" opacity=".55">
-    <circle cx="104" cy="118" r="5"/><circle cx="136" cy="118" r="5"/><circle cx="168" cy="118" r="5"/><circle cx="200" cy="118" r="5"/><circle cx="232" cy="118" r="5"/>
-    <circle cx="104" cy="148" r="5"/><circle cx="136" cy="148" r="5"/><circle cx="200" cy="148" r="5"/><circle cx="232" cy="148" r="5"/>
-  </g>
-  <circle cx="168" cy="148" r="12" fill="var(--stake)" stroke="var(--ink)" stroke-width="2.5"/>
-  <path d="M268 20c-14 0-24 10-24 23 0 17 24 38 24 38s24-21 24-38c0-13-10-23-24-23Z" fill="var(--ink)"/>
-  <circle cx="268" cy="43" r="8" fill="var(--surface)"/>
-</svg></div>
-          </div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Dream Square Properties home"><img src="assets/images/logo.png"
+          alt="Dream Square Properties logo"></a>
+      <div class="mobile-nav-actions" aria-label="Call or WhatsApp us">
+        <a class="mobile-nav-action mobile-call" 
+        href="tel:+919999999999" aria-label="Call Dream Square Properties" title="Call"><span
+            aria-hidden="true"><i class="fa-solid fa-phone"></i></span><small>Call</small></a>
+        <a class="mobile-nav-action mobile-whatsapp" data-whatsapp
+          href="#" aria-label="WhatsApp Dream Square Properties" title="WhatsApp"><span
+            aria-hidden="true"><i class="fa-solid fa-phone"></i></span><small>WhatsApp</small></a></div>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a data-nav href="index.html">Home</a><a data-nav href="projects.html">Our Projects</a><a data-nav
+          href="about.html">About Us</a><a data-nav href="contact.html">Contact</a><a data-nav
+          href="site-visit.html">Book a Visit</a><a data-nav href="emi-calculator.html">EMI Calculator</a>
+          <a data-nav href="investor.html">Investors</a>
+      </nav>
+      <!-- <a data-nav href="emi-calculator.html">Investors</a> -->
+      <!-- <a class="nav-cta" data-whatsapp href="#">Investor</a> -->
+    </div>
+  </header>
+
+  <main>
+    <!-- Banner remains image-only: no overlay text or buttons. -->
+    <section class="ds-hero" aria-label="Dream Square Properties banner"><img class="ds-hero-bg"
+        src="assets/images/DreamSquareBanner_1.png" alt="Dream Square Properties banner"></section>
+
+    <!-- Section 1: image on the left, introduction on the right. -->
+    <section class="section ds-intro ds-intro-image" id="about-preview">
+      <div class="container ds-intro-image-grid">
+        <div class="ds-intro-image-frame"><img src="assets/images/Home_page_section_2_image.jpeg"
+            alt="Property development and site illustration" loading="lazy"></div>
+        <div class="ds-intro-content"><span class="ds-eyebrow">WELCOME TO DREAM SQUARE PROPERTIES</span>
+          <h1>Find a property that fits your future.</h1>
+          <p>Every property search begins with a different goal. We help you explore property opportunities around
+            Chennai, understand project locations and details, and connect with our team to plan your next step with
+            confidence.</p>
+          <p>Whether you are starting your search or comparing available options, we are here to help you ask the right
+            questions and make an informed decision.</p><a class="ds-text-link" href="about.html">Get to know us <span
+              aria-hidden="true">→</span></a>
+        </div>
       </div>
-      <div class="car-ui">
-        <div class="dots" id="dots"><button class="dot" type="button" aria-label="Go to slide 1" aria-current="true"></button><button class="dot" type="button" aria-label="Go to slide 2" aria-current="false"></button><button class="dot" type="button" aria-label="Go to slide 3" aria-current="false"></button><button class="dot" type="button" aria-label="Go to slide 4" aria-current="false"></button></div>
-        <button class="car-btn" id="car-pause" type="button" aria-label="Pause slideshow"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" id="pause-ic"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg></button>
-        <button class="car-btn" id="car-prev" type="button" aria-label="Previous slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
-        <button class="car-btn" id="car-next" type="button" aria-label="Next slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+    </section>
+
+    <!-- Section 2: replace placeholder figures with verified company figures before launch. -->
+    <section class="ds-stats-section" aria-labelledby="ds-stats-title">
+      <div class="container">
+        <div class="ds-stats-heading"><span class="ds-eyebrow">OUR JOURNEY</span>
+          <h2 id="ds-stats-title">Built on relationships and trust.</h2>
+        </div>
+        <div class="ds-stats-grid">
+          <article class="ds-stat-card"><span class="ds-stat-value">15+</span><span class="ds-stat-label">Years of
+              experience</span></article>
+          <article class="ds-stat-card"><span class="ds-stat-value">200+</span><span class="ds-stat-label">Happy
+              customers</span></article>
+          <article class="ds-stat-card"><span class="ds-stat-value">1,00,000+</span><span class="ds-stat-label">Sq. ft.
+              sold / developed</span></article>
+          <article class="ds-stat-card"><span class="ds-stat-value">20+</span><span class="ds-stat-label">Projects
+              completed</span></article>
+        </div>
+        <!-- <p class="ds-placeholder-note">Before publishing, replace the sample figures above with Dream Square Properties’
+          verified numbers.</p> -->
       </div>
+    </section>
+
+    <!-- Section 3: company strengths and customer commitments. -->
+    <section class="section ds-commitment" id="why-us">
+      <div class="container">
+        <div class="ds-section-heading ds-heading-centered"><span class="ds-eyebrow">WHY DREAM SQUARE PROPERTIES</span>
+          <h2>Your property journey deserves clarity.</h2>
+          <p>We believe a good property decision should be supported by transparent information, responsive service and
+            careful checks.</p>
+        </div>
+        <div class="ds-commitment-grid">
+          <article class="ds-commitment-card"><span class="ds-card-number">01</span>
+            <div class="ds-line-icon" aria-hidden="true">◇</div>
+            <h3>Quality you can assess</h3>
+            <p>Understand the project, site conditions, specifications and available information before deciding.</p>
+          </article>
+          <article class="ds-commitment-card"><span class="ds-card-number">02</span>
+            <div class="ds-line-icon" aria-hidden="true">♡</div>
+            <h3>Customer-first service</h3>
+            <p>Get assistance with questions, project details and next steps throughout your property search.</p>
+          </article>
+          <article class="ds-commitment-card"><span class="ds-card-number">03</span>
+            <div class="ds-line-icon" aria-hidden="true">₹</div>
+            <h3>Affordable options</h3>
+            <p>Discuss your budget and compare suitable options, pricing and applicable costs.</p>
+          </article>
+          <article class="ds-commitment-card"><span class="ds-card-number">04</span>
+            <div class="ds-line-icon" aria-hidden="true">▤</div>
+            <h3>Clear documentation</h3>
+            <p>Ask for the relevant property records and take time to review them with qualified professionals.</p>
+          </article>
+          <article class="ds-commitment-card"><span class="ds-card-number">05</span>
+            <div class="ds-line-icon" aria-hidden="true">✓</div>
+            <h3>Approval transparency</h3>
+            <p>Check applicable government approvals and project permissions for each property before purchase.</p>
+          </article>
+          <article class="ds-commitment-card"><span class="ds-card-number">06</span>
+            <div class="ds-line-icon" aria-hidden="true">⌖</div>
+            <h3>Location guidance</h3>
+            <p>Explore access, nearby facilities and location details that matter to your plans.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: carousel scaffold. Replace logo and text placeholders with approved client assets/reviews. -->
+    <section class="section ds-testimonials" id="client-reviews" aria-labelledby="ds-testimonials-title">
+      <div class="container">
+        <div class="ds-section-heading ds-heading-centered"><span class="ds-eyebrow">CLIENT EXPERIENCES</span>
+          <h2 id="ds-testimonials-title">Our clients’ voices matter.</h2>
+          <p>We value the people who choose to work with us. Approved client feedback will be featured here.</p>
+        </div>
+        <div class="ds-review-carousel" aria-roledescription="carousel" aria-label="Client reviews">
+          <div class="ds-review-track">
+            <article class="ds-review-slide is-active" aria-label="Review placeholder 1 of 3">
+              <div class="ds-client-logo-placeholder" aria-label="Client logo placeholder">CLIENT Loga</div>
+              <div class="ds-review-stars" aria-label="Rating placeholder">★★★★★</div>
+              <blockquote>“Add an approved review from a Dream Square Properties customer here.”</blockquote>
+              <p class="ds-review-author">Customer name / initials</p>
+              <p class="ds-review-meta">Client review placeholder</p>
+            </article>
+            <article class="ds-review-slide" aria-label="Review placeholder 2 of 3" hidden>
+              <div class="ds-client-logo-placeholder" aria-label="Client logo placeholder">CLIENT LOGO</div>
+              <div class="ds-review-stars" aria-label="Rating placeholder">★★★★★</div>
+              <blockquote>“Replace this sample text with a real customer review, with their permission.”</blockquote>
+              <p class="ds-review-author">Customer name / initials</p>
+              <p class="ds-review-meta">Client review placeholder</p>
+            </article>
+            <article class="ds-review-slide" aria-label="Review placeholder 3 of 3" hidden>
+              <div class="ds-client-logo-placeholder" aria-label="Client logo placeholder">CLIENT LOGO</div>
+              <div class="ds-review-stars" aria-label="Rating placeholder">★★★★★</div>
+              <blockquote>“Use a verified customer quote here; do not publish placeholder testimonials.”</blockquote>
+              <p class="ds-review-author">Customer name / initials</p>
+              <p class="ds-review-meta">Client review placeholder</p>
+            </article>
+          </div>
+          <div class="ds-review-controls"><button type="button" class="ds-review-prev"
+              aria-label="Previous review">←</button>
+            <div class="ds-review-dots" aria-label="Choose review"><button type="button" class="is-active"
+                aria-label="Show review 1" aria-current="true"></button><button type="button"
+                aria-label="Show review 2"></button><button type="button" aria-label="Show review 3"></button></div>
+            <button type="button" class="ds-review-next" aria-label="Next review">→</button>
+          </div>
+          <!-- <p class="ds-placeholder-note">Development placeholders: add real client logos and approved reviews before
+            publishing.</p> -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Featured projects remain connected to the existing projects.js data. -->
+    <!-- <section class="section ds-projects" id="projects"><div class="container"><div class="ds-section-heading ds-heading-split"><div><span class="ds-eyebrow">EXPLORE PROPERTY OPTIONS</span><h2>Projects worth exploring.</h2></div><div class="ds-heading-aside"><p>Review available projects and contact our team for current pricing, availability, specifications and documentation.</p><a class="ds-text-link" href="projects.html">Explore all projects <span aria-hidden="true">→</span></a></div></div><div class="cards ds-project-cards" id="featured-projects"><div class="empty-state">Loading projects…</div></div></div></section> -->
+
+    <section class="section ds-enquiry-section" id="enquiry">
+      <div class="container ds-enquiry-grid">
+        <div class="ds-enquiry-copy"><span class="ds-eyebrow">LET’S TALK PROPERTY</span>
+          <h2>Tell us what you’re looking for.</h2>
+          <p>Share a few details about your property search. Our team can follow up to discuss your requirements and
+            available options.</p>
+          <div class="ds-enquiry-points">
+            <div><span aria-hidden="true">✓</span> Discuss preferred locations</div>
+            <div><span aria-hidden="true">✓</span> Request project information</div>
+            <div><span aria-hidden="true">✓</span> Plan a site visit</div>
+          </div>
+          <p class="ds-disclaimer">Please verify pricing, availability, applicable approvals and property documentation
+            before making a decision.</p>
+        </div>
+        <form class="ds-enquiry-form" id="homepage-enquiry-form">
+          <div class="ds-form-heading"><span class="ds-eyebrow">WE’RE HERE TO HELP</span>
+            <h3>Property enquiry</h3>
+            <p>Fields marked * are required.</p>
+          </div>
+          <div class="ds-form-grid">
+            <div class="form-field"><label for="enq-name">Full name *</label><input class="form-control" id="enq-name"
+                name="name" autocomplete="name" required></div>
+            <div class="form-field"><label for="enq-phone">Mobile number *</label><input class="form-control"
+                id="enq-phone" name="phone" type="tel" autocomplete="tel" required pattern="[0-9+() -]{8,18}"></div>
+            <div class="form-field ds-form-full"><label for="enq-email">Email address</label><input class="form-control"
+                id="enq-email" name="email" type="email" autocomplete="email"></div>
+            <div class="form-field ds-form-full"><label for="enq-interest">Property interest</label><select
+                class="form-control" id="enq-interest" name="interest">
+                <option value="Residential plots">Residential plots</option>
+                <option value="Villa plots">Villa plots</option>
+                <option value="Villa / house">Villa / house</option>
+                <option value="Other property">Other property</option>
+                <option value="Need guidance">I’m not sure yet</option>
+              </select></div>
+            <div class="form-field ds-form-full"><label for="enq-message">Your requirements</label><textarea
+                class="form-control" id="enq-message" name="message" rows="3"
+                placeholder="Preferred location, budget or questions…"></textarea></div>
+            <div class="form-field ds-form-full"><button class="btn btn-primary ds-submit-button" type="submit">Send
+                enquiry on WhatsApp <span aria-hidden="true">↗</span></button></div>
+          </div>
+          <p class="ds-form-note">WhatsApp opens with your message ready to send. This form does not store submissions
+            on a server.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section ds-final-cta">
+      <div class="container">
+        <div class="ds-cta-band">
+          <div><span class="ds-eyebrow">TAKE THE NEXT STEP</span>
+            <h2>Ready to explore a property?</h2>
+            <p>Talk to our team, plan a site visit or estimate your home-loan EMI.</p>
+          </div>
+          <div class="ds-cta-actions"><a class="btn btn-light" href="site-visit.html">Book a site visit <span
+                aria-hidden="true">↗</span></a><a class="ds-cta-secondary" href="emi-calculator.html">Estimate your home
+              loan EMI →</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Three-column footer: company profile, pages, quick links. -->
+  <footer class="footer ds-footer">
+    <div class="container">
+      <div class="ds-footer-grid">
+        <div class="ds-footer-brand"><a href="index.html" aria-label="Dream Square Properties home"><img
+              src="assets/images/logo.png" alt="Dream Square Properties logo"></a>
+          <p>Helping you explore property opportunities around Chennai with clear information, responsive assistance and
+            support for your next steps.</p>
+          <div class="ds-footer-social"><a data-whatsapp href="#">WhatsApp us ↗</a><a data-email
+              href="mailto:hello@dreamsquareproperties.in">Email us ↗</a></div>
+        </div>
+        <div class="ds-footer-column">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Our Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="ds-footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="site-visit.html">Book a Site Visit</a></li>
+            <li><a href="emi-calculator.html">EMI Calculator</a></li>
+            <li><a data-phone href="tel:+919999999999">Call our team</a></li>
+            <li><a data-whatsapp href="#">WhatsApp enquiry</a></li>
+            <li><a data-email href="mailto:hello@dreamsquareproperties.in">Email us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ds-footer-bottom"><span>© <span id="current-year"></span> Dream Square Properties. All rights
+          reserved.</span><span>Chennai, Tamil Nadu, India</span></div>
     </div>
-    <p id="car-live" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"></p>
-    <div class="stats">
-      <div class="stat"><b>900 – 3,000 sq.ft</b><span>Plot sizes available</span></div>
-      <div class="stat"><b>DTCP approved</b><span>Layouts with clear patta</span></div>
-      <div class="stat"><b>Bank loans</b><span>Assistance with paperwork</span></div>
-      <div class="stat"><b>Mon – Sat</b><span>9:30 AM – 6:30 PM</span></div>
-    </div>
-  </div>
-</section>
+  </footer>
+  <a class="whatsapp-float" data-whatsapp href="#" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">✆</a>
+  <script src="assets/js/site-config.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    const enquiryForm = document.getElementById('homepage-enquiry-form');
+    enquiryForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const data = new FormData(enquiryForm);
+      const message = ['Hello Dream Square Properties, I have a property enquiry.', 'Name: ' + (data.get('name') || ''), 'Mobile: ' + (data.get('phone') || ''), 'Email: ' + (data.get('email') || 'Not provided'), 'Interested in: ' + (data.get('interest') || ''), 'Requirements: ' + (data.get('message') || 'Not provided')].join('\n');
+      const configuredPhone = document.querySelector('[data-phone]')?.getAttribute('href') || 'tel:+919999999999';
+      const phone = configuredPhone.replace('tel:', '').replace(/\D/g, '');
+      if (!phone || phone.endsWith('9999999999')) { alert('Please update the company phone/WhatsApp number in assets/js/site-config.js before using this form.'); return; }
+      window.open('https://wa.me/' + phone + '?text=' + encodeURIComponent(message), '_blank', 'noopener');
+    });
 
-<section>
-  <div class="wrap">
-    <div class="sec-head"><p class="eyebrow">Explore</p><h2>Everything you need before you buy</h2></div>
-    <div class="link-cards">
-      <a class="link-card" href="ongoing-projects.html"><h3>Projects</h3><p>Ongoing, completed and upcoming layouts with sizes and prices.</p><span class="go">Browse projects →</span></a>
-      <a class="link-card" href="site-visit.html"><h3>Site visit booking</h3><p>Pick a day and time and see the plot with our team.</p><span class="go">Book a visit →</span></a>
-      <a class="link-card" href="loan-calculator.html"><h3>Plot loan calculator</h3><p>Estimate your monthly EMI for any plot price.</p><span class="go">Calculate EMI →</span></a>
-      <a class="link-card" href="about.html"><h3>About us</h3><p>How we plan layouts and what we hand over with every plot.</p><span class="go">Read more →</span></a>
-    </div>
-  </div>
-</section>
+    // Accessible auto-advancing client-review carousel. Pause on hover/focus and when reduced motion is requested.
+    (function () {
+      const carousel = document.querySelector('.ds-review-carousel');
+      if (!carousel) return;
+      const slides = Array.from(carousel.querySelectorAll('.ds-review-slide'));
+      const dots = Array.from(carousel.querySelectorAll('.ds-review-dots button'));
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let current = 0;
+      let timer = null;
+      function showSlide(index) {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => { slide.hidden = i !== current; slide.classList.toggle('is-active', i === current); });
+        dots.forEach((dot, i) => { dot.classList.toggle('is-active', i === current); if (i === current) dot.setAttribute('aria-current', 'true'); else dot.removeAttribute('aria-current'); });
+      }
+      function stop() { if (timer) window.clearInterval(timer); timer = null; }
+      function start() { stop(); if (!reducedMotion) timer = window.setInterval(() => showSlide(current + 1), 5000); }
+      carousel.querySelector('.ds-review-prev').addEventListener('click', () => { showSlide(current - 1); start(); });
+      carousel.querySelector('.ds-review-next').addEventListener('click', () => { showSlide(current + 1); start(); });
+      dots.forEach((dot, i) => dot.addEventListener('click', () => { showSlide(i); start(); }));
+      carousel.addEventListener('mouseenter', stop); carousel.addEventListener('mouseleave', start);
+      carousel.addEventListener('focusin', stop); carousel.addEventListener('focusout', start);
+      showSlide(0); start();
+    })();
+  </script>
+</body>
 
-<section>
-  <div class="wrap">
-    <div class="sec-head"><p class="eyebrow">How buying works</p><h2>From first visit to registration in five steps</h2></div>
-    <ol class="steps">
-      <li><h3>Choose a layout</h3><p>Compare projects, plot sizes and prices on the Projects pages.</p></li>
-      <li><h3>Visit the site</h3><p>Book a slot and see the plot, road and surroundings in person.</p></li>
-      <li><h3>Verify documents</h3><p>Check the approval, patta, title deed and encumbrance certificate.</p></li>
-      <li><h3>Book with an advance</h3><p>Pay the booking amount and receive an agreement of sale.</p></li>
-      <li><h3>Register the plot</h3><p>Complete the loan, pay the balance and register the sale deed.</p></li>
-    </ol>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="sec-head"><p class="eyebrow">Good to know</p><h2>Common questions</h2></div>
-    <div class="faq">
-      <details><summary>Which documents do I receive?</summary><p>You receive the sale deed, patta, approved layout copy, encumbrance certificate and the tax receipts. You can check them before booking.</p></details>
-      <details><summary>How big is one cent?</summary><p>One cent is 435.6 square feet, and 100 cents make one acre. A 1,200 sq.ft plot is about 2.75 cents.</p></details>
-      <details><summary>Can I get a bank loan for a plot?</summary><p>Yes. Banks lend for approved layouts. Use the loan calculator to estimate your EMI, and our team helps with the documents your bank asks for.</p></details>
-      <details><summary>Is there a charge for the site visit?</summary><p>No. Book a slot on the Site Visit Booking page and we will confirm it on WhatsApp.</p></details>
-    </div>
-  </div>
-</section>
-
-</main>
-<footer><div class="wrap">
-  <span>© 2026 Nilam Plots. Sample website.</span>
-  <nav class="foot-links" aria-label="Footer">
-    <a href="about.html">About Us</a><a href="ongoing-projects.html">Projects</a><a href="site-visit.html">Site Visit</a><a href="loan-calculator.html">Loan Calculator</a><a href="contact.html">Contact</a>
-  </nav>
-</div></footer>
-<script src="app.js" defer></script>
-
-</body></html>
+</html>

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Estimate your monthly home or property loan EMI with the Dream Square Properties EMI calculator.">
+    <title>EMI Calculator | Dream Square Properties</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/homepage-refresh.css">
+</head>
+
+<body>
+    <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-actions" aria-label="Quick contact">
+        <!-- <a class="topbar-contact topbar-whatsapp" data-whatsapphref="#" aria-label="Contact us on WhatsApp"><span aria-hidden="true">◉</span> WhatsApp</a> -->
+        <a class="topbar-contact topbar-email contact-num" data-phone href="mailto:hello@dreamsquareproperties.in"
+          aria-label="Email Dream Square Properties"><span aria-hidden="true">✉</span> Email Us</a>
+        <a class="topbar-contact topbar-email" data-email href="mailto:hello@dreamsquareproperties.in"
+          aria-label="Email Dream Square Properties"><span aria-hidden="true">✉</span> Email Us</a>
+        </div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Dream Square Properties home"><img src="assets/images/logo.png"
+          alt="Dream Square Properties logo"></a>
+      <div class="mobile-nav-actions" aria-label="Call or WhatsApp us">
+        <a class="mobile-nav-action mobile-call" 
+        href="tel:+919999999999" aria-label="Call Dream Square Properties" title="Call"><span
+            aria-hidden="true"><i class="fa-solid fa-phone"></i></span><small>Call</small></a>
+        <a class="mobile-nav-action mobile-whatsapp" data-whatsapp
+          href="#" aria-label="WhatsApp Dream Square Properties" title="WhatsApp"><span
+            aria-hidden="true"><i class="fa-solid fa-phone"></i></span><small>WhatsApp</small></a></div>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a data-nav href="index.html">Home</a><a data-nav href="projects.html">Our Projects</a><a data-nav
+          href="about.html">About Us</a><a data-nav href="contact.html">Contact</a><a data-nav
+          href="site-visit.html">Book a Visit</a><a data-nav href="emi-calculator.html">EMI Calculator</a>
+          <a data-nav href="emi-calculator.html">Investors</a>
+      </nav>
+      <!-- <a data-nav href="emi-calculator.html">Investors</a> -->
+      <!-- <a class="nav-cta" data-whatsapp href="#">Investor</a> -->
+    </div>
+  </header>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumbs"><a href="index.html">Home</a> / EMI Calculator</div>
+                <div class="eyebrow">Plan your budget</div>
+                <h1>Estimate your monthly EMI.</h1>
+                <p>Adjust the loan amount, interest rate and tenure to estimate a monthly loan repayment.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="notice" style="margin-bottom:25px">This calculator provides an estimate using a standard
+                    reducing-balance EMI formula. Actual lender offers, fees, taxes and terms may differ. This is not a
+                    loan offer or financial advice.</div>
+                <div class="split" style="align-items:start;gap:30px">
+                    <div class="form-card">
+                        <div class="section-kicker">Loan details</div>
+                        <h2 style="font-size:2rem">Enter your estimates</h2>
+                        <div class="form-grid">
+                            <div class="form-field full"><label for="loan-amount">Loan amount (₹)</label><input
+                                    class="form-control" id="loan-amount" type="number" min="10000" max="100000000"
+                                    step="10000" value="2500000"></div>
+                            <div class="form-field full"><label for="interest-rate">Annual interest rate
+                                    (%)</label><input class="form-control" id="interest-rate" type="number" min="0"
+                                    max="40" step="0.1" value="8.5"></div>
+                            <div class="form-field full"><label for="loan-tenure">Loan tenure (years)</label><input
+                                    class="form-control" id="loan-tenure" type="number" min="1" max="40" step="1"
+                                    value="20"></div>
+                        </div>
+                        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px"><button
+                                class="btn btn-primary" id="calculate-emi" type="button">Calculate EMI</button><button
+                                class="btn btn-outline" id="reset-emi" type="button">Reset values</button></div>
+                        <p class="form-note">Use the interest rate and tenure quoted by your bank or lender for a more
+                            relevant estimate.</p>
+                    </div>
+                    <div class="form-card" style="background:linear-gradient(150deg,#123D9B,#087bc1);color:#fff">
+                        <div class="section-kicker" style="color:#b8eaff">Your estimate</div>
+                        <p style="color:#dce9ff;margin-bottom:5px">Estimated monthly EMI</p>
+                        <div id="emi-monthly"
+                            style="font:800 clamp(2.2rem,4vw,3.3rem) Manrope,sans-serif;line-height:1.2;margin-bottom:25px">
+                            ₹21,696</div>
+                        <div style="border-top:1px solid rgba(255,255,255,.22);padding-top:18px;display:grid;gap:18px">
+                            <div>
+                                <p style="color:#c8e3ff;margin:0;font-size:.86rem">Principal amount</p><strong
+                                    id="emi-principal" style="font-size:1.25rem">₹25,00,000</strong>
+                            </div>
+                            <div>
+                                <p style="color:#c8e3ff;margin:0;font-size:.86rem">Estimated total interest</p><strong
+                                    id="emi-interest" style="font-size:1.25rem">₹27,87,000</strong>
+                            </div>
+                            <div>
+                                <p style="color:#c8e3ff;margin:0;font-size:.86rem">Estimated total repayment</p><strong
+                                    id="emi-total" style="font-size:1.25rem">₹52,87,000</strong>
+                            </div>
+                        </div><a class="btn btn-light" data-emi-whatsapp href="#"
+                            style="margin-top:25px;width:100%">Discuss a property budget ↗</a>
+                    </div>
+                </div>
+                <div style="margin-top:28px;padding:25px;border:1px solid var(--line);border-radius:20px">
+                    <h3>How is EMI calculated?</h3>
+                    <p>The standard formula is EMI = P × r × (1 + r)<sup>n</sup> ÷ ((1 + r)<sup>n</sup> − 1), where P is
+                        the principal, r is the monthly interest rate and n is the total number of monthly payments. At
+                        0% interest, EMI is principal divided by the number of months.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><img src="assets/images/logo.png" alt="Dream Square Properties logo">
+                    <p>Helping you explore property opportunities around Chennai.</p><a data-whatsapp href="#">Chat with
+                        us on WhatsApp ↗</a>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <div class="footer-links"><a href="index.html">Home</a><a href="projects.html">Our Projects</a><a
+                            href="about.html">About Us</a><a href="contact.html">Contact</a><a
+                            href="site-visit.html">Book a Visit</a><a href="emi-calculator.html">EMI Calculator</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Get in touch</h4>
+                    <div class="footer-links"><a data-phone href="tel:+919999999999">+91 99999 99999</a><a data-email
+                            href="mailto:hello@dreamsquareproperties.in">hello@dreamsquareproperties.in</a><span
+                            data-address>Chennai, Tamil Nadu, India</span></div>
+                </div>
+                <div>
+                    <h4>Plan your next step</h4>
+                    <p>Estimate your repayment, then contact our team for project information.</p>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© <span id="current-year"></span> Dream Square Properties. All rights
+                    reserved.</span><span>EMI estimates are indicative only.</span></div>
+        </div>
+    </footer><a class="whatsapp-float" data-whatsapp href="#" aria-label="Chat on WhatsApp">✆</a>
+    <script src="assets/js/site-config.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        (function () {
+            const amount = document.getElementById("loan-amount"), rate = document.getElementById("interest-rate"), years = document.getElementById("loan-tenure");
+            const fmt = n => new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(Number.isFinite(n) ? n : 0);
+            function calc() {
+                const P = Number(amount.value), annual = Number(rate.value), y = Number(years.value);
+                if (!(P > 0) || annual < 0 || annual > 40 || !(y > 0) || y > 40) { alert("Enter a loan amount above zero, an interest rate from 0 to 40, and tenure from 1 to 40 years."); return; }
+                const n = Math.round(y * 12), r = annual / 1200;
+                const emi = r === 0 ? P / n : P * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
+                const total = emi * n, interest = total - P;
+                document.getElementById("emi-monthly").textContent = fmt(emi);
+                document.getElementById("emi-principal").textContent = fmt(P);
+                document.getElementById("emi-interest").textContent = fmt(interest);
+                document.getElementById("emi-total").textContent = fmt(total);
+                const wa = document.querySelector("[data-emi-whatsapp]");
+                const number = (window.DREAM_SQUARE_CONFIG.whatsappNumber || "").replace(/\\D/g, "");
+                wa.href = `https://wa.me/${number}?text=${encodeURIComponent(`Hello Dream Square Properties, I would like to discuss a property within my estimated budget. Loan amount: ${fmt(P)}, annual interest rate: ${annual}%, tenure: ${y} years, estimated EMI: ${fmt(emi)} per month.`)}`;
+                wa.target = "_blank"; wa.rel = "noopener";
+            }
+            document.getElementById("calculate-emi").addEventListener("click", calc);
+            document.getElementById("reset-emi").addEventListener("click", () => { amount.value = 2500000; rate.value = 8.5; years.value = 20; calc(); });
+            [amount, rate, years].forEach(el => el.addEventListener("input", calc));
+            document.addEventListener("DOMContentLoaded", calc); calc();
+        })();
+    </script>
+</body>
+
+</html>
